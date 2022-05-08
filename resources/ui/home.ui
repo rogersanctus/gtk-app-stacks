@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkBox" id="home-view">
+    <property name="orientation">vertical</property>
+    <property name="spacing">12</property>
+    <property name="name">main-box</property>
+    <property name="halign">center</property>
+    <property name="valign">center</property>
+    <child>
+        <object class="GtkBox">
+          <property name="vexpand">1</property>
+        </object>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="label">Welcome!</property>
+      </object>
+    </child>
+    <child>
+        <object class="GtkEntry">
+          <property name="focusable">1</property>
+          <property name="name">login-input</property>
+        </object>
+    </child>
+    <child>
+        <object class="GtkEntry">
+          <property name="focusable">1</property>
+          <property name="name">senha-input</property>
+        </object>
+    </child>
+    <child>
+        <object class="GtkButton">
+          <property name="label">Sign In</property>
+          <property name="halign">center</property>
+        </object>
+    </child>
+    <child>
+        <object class="GtkBox">
+          <property name="vexpand">1</property>
+        </object>
+    </child>
+  </object>
+</interface>

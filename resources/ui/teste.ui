@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="teste-view" parent="GtkBox">
+    <property name="orientation">vertical</property>
+    <property name="spacing">12</property>
+    <property name="name">main-box</property>
+    <property name="halign">center</property>
+    <property name="valign">center</property>
+    <child>
+        <object class="GtkBox">
+          <property name="vexpand">1</property>
+        </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="label1">
+        <property name="label">Now Yes!</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="label2">
+        <property name="label">Be very Welcome!</property>
+      </object>
+    </child>
+    <child>
+        <object class="GtkBox">
+          <property name="vexpand">1</property>
+        </object>
+    </child>
+  </template>
+</interface>
